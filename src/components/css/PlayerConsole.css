@@ -1,0 +1,73 @@
+.console {
+  position: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  bottom: 0;
+  height: 65px;
+  width: 98vw;
+  background-color: #282828;
+  padding: 20px;
+  color: white;
+}
+
+
+.console_left {
+  flex: 0.3;
+  display: flex;
+  align-items: center;
+}
+
+.console_album {
+  height: 60px;
+  width: 60px;
+  margin-right: 20px;
+  object-fit: contain;
+}
+
+.song_info > h4 {
+  margin-bottom: 5px;
+}
+
+.song_info > p {
+  font-size: 12px;
+}
+
+.console_center {
+  flex: 0.4;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 300px;
+}
+
+.console_green {
+  color: #1ed15e;
+}
+
+.console_right {
+  flex: 0.3;
+  display: flex;
+ justify-content: flex-end;
+  align-items: center;
+}
+
+.console_right > .MuiSlider-root {
+    color: green;
+    width: 300px;
+    margin-left: 30px;
+}
+
+.console_icon,
+.console_green {
+  cursor: pointer;
+}
+
+.console_icon:hover,
+.console_green:hover {
+  transition: transform 0.2s ease-in-out;
+  transform: scale(1.2) !important;
+}
+.console_right_icons{
+    margin: 10px;
+}

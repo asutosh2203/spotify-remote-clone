@@ -1,0 +1,66 @@
+.songRow {
+  border-radius: 7px;
+  margin-left: 20px;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: white;
+  user-select: none;
+}
+
+.songRow_album_info {
+  display: flex;
+  flex: 0.4;
+}
+
+.songRow_details {
+  color: rgba(255, 255, 255, 0.6);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex: 0.6;
+  font-size: 14px;
+}
+
+.songRow_details_track_name {
+  flex: 0.5;
+}
+
+.songRow_details_right {
+  flex: 0.5;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.songRow:hover {
+  background-color: rgba(0, 0, 0, 0.7);
+  opacity: 0.8;
+}
+
+.songRow:hover .songRow_details {
+  color: white;
+}
+.songRow:hover .songRow_info > p {
+  color: white;
+}
+
+.songRow_info {
+  margin-left: 20px;
+}
+
+.songRow_info > h1 {
+  font-size: 15px;
+}
+
+.songRow_info > p {
+  font-size: 13px;
+  margin-top: 3px;
+  color: rgb(179, 179, 179);
+}
+
+.songRow_album {
+  height: 40px;
+  width: 40px;
+}

@@ -1,0 +1,156 @@
+.body {
+  background: linear-gradient(-45deg, rgba(0, 0, 0, 1), rgb(91, 87, 115));
+  color: white;
+  flex: 0.85;
+  height: 88vh;
+  overflow-y: overlay;
+  padding: 30px;
+}
+
+.body::-webkit-scrollbar {
+  display: none;
+}
+
+.body_info {
+  align-items: flex-end;
+  display: flex;
+  padding: 10px;
+}
+
+.body_info > img {
+  box-shadow: 0 4px 60px rgba(0, 0, 0, 0.5);
+  height: 20vw;
+  margin: 0 20px;
+}
+
+.body_info_text {
+  margin-left: 10px;
+  flex: 1;
+}
+
+.body_info_text > h2 {
+  font-size: 48px;
+  margin-bottom: 10px;
+}
+
+.body_info_text > .playlist_desc {
+  color: rgb(172, 172, 172);
+  font-size: 14px;
+}
+
+.addnl_details {
+  align-items: center;
+  display: flex;
+  font-size: 14px;
+  margin-top: 10px;
+}
+
+.addnl_details > svg {
+  font-size: 20px;
+}
+.addnl_details > p {
+  align-items: center;
+  display: flex;
+}
+
+.owner {
+  font-size: 15px;
+  font-weight: 700;
+}
+
+.owner:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.second_dot {
+  font-size: 20px;
+}
+
+.totalDuration {
+  align-items: center;
+  color: rgb(172, 172, 172);
+  display: flex;
+  font-size: 14px;
+  margin-top: 5px;
+}
+
+.totalDuration > p {
+  margin-right: 0.2rem;
+}
+
+.body_songs {
+  margin: 20px -30px;
+}
+
+.body_icons {
+  align-items: center;
+  display: flex;
+}
+
+.body_icons > .MuiSvgIcon-root {
+  cursor: pointer;
+  margin-right: 20px;
+}
+
+.body_play_button {
+  color: #1fdf64;
+  font-size: 80px !important;
+  margin-bottom: 20px;
+  margin-left: 50px;
+  margin-top: 20px;
+}
+
+.body_play_button:hover {
+  transform: scale(1.08);
+  transition: 100ms transform ease-in-out;
+}
+
+.songs_header {
+  border-bottom: 1px rgba(255, 255, 255, 0.288) solid;
+  color: rgba(255, 255, 255, 0.6);
+  display: flex;
+  font-size: 14px;
+  letter-spacing: 2px;
+  margin: 5px 0 5px 20px;
+  padding: 20px;
+  text-transform: uppercase;
+}
+
+.track_name:hover,
+.album_name:hover,
+.duration:hover {
+  color: white;
+  user-select: none;
+}
+
+.track_name {
+  flex: 0.4;
+}
+
+.track_details {
+  flex: 0.6;
+  display: flex;
+  justify-content: space-between;
+}
+
+.album_name {
+  flex: 0.5;
+}
+
+.track_details_right {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex: 0.5;
+}
+
+.duration {
+  font-size: 20px;
+}
+
+@media screen and (max-width: 768px) {
+  .body {
+    flex: 1;
+  }
+}

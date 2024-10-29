@@ -1,38 +1,43 @@
-import React from 'react'
-import './css/Sidebar.css'
-import small_logo from '../assets/spotify_small.png'
-import { Home, Search, LibraryMusic, FavoriteBorder } from '@mui/icons-material'
-import SidebarOption from './SidebarOption'
-import { useDataLayerValue } from '../Context/DataLayer'
+import React from "react";
+import "./css/Sidebar.css";
+import small_logo from "../assets/spotify_small.png";
+import {
+  Home,
+  Search,
+  LibraryMusic,
+  FavoriteBorder,
+} from "@mui/icons-material";
+import SidebarOption from "./SidebarOption";
+import { useDataLayerValue } from "../Context/DataLayer";
 
 const Sidebar = () => {
-  const [{ playlists }] = useDataLayerValue()
-
+  const [{ playlists }] = useDataLayerValue();
+  // console.log(playlists)
   return (
-    <div className='sidebar'>
+    <div className="sidebar">
       <img src={small_logo} />
-      <SidebarOption title='Home' Icon={Home} />
-      <SidebarOption title='Search' Icon={Search} />
-      <SidebarOption title='Library' Icon={LibraryMusic} />
+      <SidebarOption title="Home" Icon={Home} />
+      <SidebarOption title="Search" Icon={Search} />
+      <SidebarOption title="Library" Icon={LibraryMusic} />
       <br />
       <SidebarOption
-        title='Liked Songs'
+        title="Liked Songs"
         isLikedSongs={true}
         Icon={FavoriteBorder}
       />
       <br />
-      <strong className='sidebar_title'>PLAYLISTS</strong>
+      <strong className="sidebar_title">PLAYLISTS</strong>
       <hr />
       {playlists?.items?.map((playlist, index) => (
         <SidebarOption
-          key={index}
+          key={playlist.id}
           title={playlist.name}
           isPlaylist={true}
           playlist={playlist}
         />
       ))}
     </div>
-  )
-}
+  );
+};
 
-export default Sidebar
+export default Sidebar;

@@ -105,3 +105,7 @@
   bottom: -10px;
   font-size: 20px;
 }
+
+.hidden {
+  display: none;
+}

@@ -14,6 +14,7 @@ const SidebarOption = ({ title, Icon, isPlaylist, playlist, isLikedSongs }) => {
     dispatch({ type: "SET_PLAYLIST", currentPlaylistID: playlistID });
     localStorage.setItem("currentPlaylistId", playlistID);
     spotifyObject.getPlaylist(playlistID).then((response) => {
+      console.log(response);
       dispatch({
         type: "SET_DISCOVER_WEEKLY",
         discover_weekly: response,
